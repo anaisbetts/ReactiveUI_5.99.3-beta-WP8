@@ -1,7 +1,7 @@
 ReactiveUI_5.99.3-beta-WP8
 ==========================
 
-Repro repo for issue with the ReactiveUI 5.99.3-beta NuGet package
+Repro project for an issue discovered with the ReactiveUI 5.99.3-beta NuGet package when attempting to create a WP8 app.
 
 When running the project, it fails with the following error:
 
