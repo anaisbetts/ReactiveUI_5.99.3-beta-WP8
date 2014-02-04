@@ -21,6 +21,10 @@ namespace PivotApp1
             InitializeComponent();
 
             this.OneWayBind(ViewModel, x => x.Router, x => x.Router.Router);
+
+            // NB: Normally, RxUI.Mobile does this for us, but something's going
+            // pear-shaped
+            ViewModel = new AppBootstrapper();
         }
 
         public AppBootstrapper ViewModel

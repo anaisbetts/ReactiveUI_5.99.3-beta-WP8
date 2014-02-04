@@ -48,7 +48,10 @@ namespace PivotApp1
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 
-            Locator.CurrentMutable.Register(() => new AppBootstrapper(), typeof(IApplicationRootState));
+            this.WhenAny(x => x.ViewModel, x => x.Value)
+                .Subscribe(x => {
+                    Console.WriteLine("Foo");
+                });
 
             Locator.CurrentMutable.Register(() => new AppBootstrapper(), typeof(IApplicationRootState));
 
