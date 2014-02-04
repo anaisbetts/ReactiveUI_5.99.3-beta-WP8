@@ -60,7 +60,7 @@ namespace PivotApp1.ViewModels
         {
             Router = new RoutingState();
 
-            Locator.CurrentMutable.Register(() => new TestPage(), typeof(MainViewModel));
+            Locator.CurrentMutable.Register(() => new TestPage(), typeof(IViewFor<MainViewModel>));
 
             Locator.CurrentMutable.RegisterConstant(this, typeof(IApplicationRootState));
             Locator.CurrentMutable.RegisterConstant(this, typeof(IScreen));
