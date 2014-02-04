@@ -8,6 +8,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using PivotApp1.Resources;
 using PivotApp1.ViewModels;
+using ReactiveUI;
 using ReactiveUI.Mobile;
 using ReactiveUI.Xaml;
 using Splat;
@@ -49,8 +50,7 @@ namespace PivotApp1
 
             Locator.CurrentMutable.Register(() => new AppBootstrapper(), typeof(IApplicationRootState));
 
-            var registrator = new Registrations();
-            registrator.Register((o, t) => Locator.CurrentMutable.Register(o, t));
+            Locator.CurrentMutable.Register(() => new AppBootstrapper(), typeof(IApplicationRootState));
 
             var host = Locator.Current.GetService<ISuspensionHost>();
             host.SetupDefaultSuspendResume();
