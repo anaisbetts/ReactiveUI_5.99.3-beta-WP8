@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>reactiveui</id>
+    <version>5.99.3-beta</version>
+    <authors>Paul Betts</authors>
+    <owners>Paul Betts</owners>
+    <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+    <projectUrl>http://www.reactiveui.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An MVVM library for WPF and Silverlight that is deeply integrated with the Reactive Extensions</description>
+    <language>en-us</language>
+    <dependencies>
+      <dependency id="reactiveui-core" version="[5.99.3-beta]" />
+      <dependency id="reactiveui-platforms" version="[5.99.3-beta]" />
+    </dependencies>
+  </metadata>
+</package>
