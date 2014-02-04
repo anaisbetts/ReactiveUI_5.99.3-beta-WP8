@@ -24,5 +24,6 @@
 			</phone:LongListSelector.ItemTemplate>
 		</phone:LongListSelector>
 
+        <TextBlock Text="Page Two" FontSize="32" VerticalAlignment="Bottom" />
 	</Grid>
 </UserControl>
